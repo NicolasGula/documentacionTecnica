@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+/* toda la pagina*/
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans";
+  color: white;
+  background-color: black;
+}
+
+/*barra de navegacion*/
+.navbar {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+#js {
+  font-size: 2em;
+  height: 50px;
+  margin-top: 0;
+  color: black;
+  background-color: yellow;
+  text-align: center;
+}
+
+.navbar a {
+  display: block;
+  padding: 13px;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: yellow;
+}
+
+/*documento principal*/
+.content {
+  margin-left: 300px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+section {
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 30px 0;
+  padding: 10px 15px;
+  font-size: 1em;
+  background-color: black;
+  -webkit-box-shadow: 1px 1px 10px 2px #ffffff;
+          box-shadow: 1px 1px 10px 2px #ffffff;
+}
+
+/*moviles*/
+@media screen and (max-width: 700px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+  }
+  .navbar a {
+    float: none;
+  }
+  .content {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar a {
+    height: 20px;
+  }
+  #navbar {
+    overflow: auto;
+    background-color: black;
+    position: fixeds;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+.logo > a {
+  color: #ecf4f5;
+  font-family: "Parisienne", cursive;
+  margin-left: 70%;
+  font-size: 30px;
+  letter-spacing: 1px;
+  -webkit-animation: neon 0.5s ease-in-out infinite alternate;
+          animation: neon 0.5s ease-in-out infinite alternate;
+  text-decoration: none;
+}
+
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(140, 30, 242, 0.52), 0 0 21px rgba(182, 30, 242, 0.92), 0 0 34px rgba(129, 30, 242, 0.78), 0 0 54px rgba(157, 30, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(0, 68, 255, 0.781), 0 0 22px #0056f5, 0 0 38px #0266fd, 0 0 60px #1e22f2;
+  }
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(140, 30, 242, 0.52), 0 0 21px rgba(182, 30, 242, 0.92), 0 0 34px rgba(129, 30, 242, 0.78), 0 0 54px rgba(157, 30, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(0, 68, 255, 0.781), 0 0 22px #0056f5, 0 0 38px #0266fd, 0 0 60px #1e22f2;
+  }
+}
+/*# sourceMappingURL=technicalstyle.css.map */
